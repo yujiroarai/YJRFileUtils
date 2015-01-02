@@ -32,9 +32,6 @@ Pod::Spec.new do |s|
     'YJRFileUtils' => ['Pod/Assets/*.png']
   }
 
-  s.frameworks = 'CommonCrypto'
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'CommonCrypto', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.libraries = 'commonCrypto'
+  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libcommonCrypto' }
 end
