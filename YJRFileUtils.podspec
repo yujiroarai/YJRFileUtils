@@ -10,19 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "YJRFileUtils"
   s.version          = "0.1.0"
-  s.summary          = "A short description of YJRFileUtils."
+  s.summary          = "File Utilities"
   s.description      = <<-DESC
                        An optional longer description of YJRFileUtils
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/YJRFileUtils"
+  s.homepage         = "https://github.com/yujiroarai/YJRFileUtils"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "yujiroarai" => "yujiroarai@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/YJRFileUtils.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/yujiroarai/YJRFileUtils.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/yujiroarai'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -32,7 +32,9 @@ Pod::Spec.new do |s|
     'YJRFileUtils' => ['Pod/Assets/*.png']
   }
 
+  s.frameworks = 'CommonCrypto'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  # s.frameworks = 'CommonCrypto', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
