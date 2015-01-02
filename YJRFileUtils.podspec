@@ -12,10 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "File Utilities"
   s.description      = <<-DESC
-                       An optional longer description of YJRFileUtils
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       file utilities.
                        DESC
   s.homepage         = "https://github.com/yujiroarai/YJRFileUtils"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -24,14 +21,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/yujiroarai/YJRFileUtils.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/yujiroarai'
 
-  s.platform     = :ios, '7.0'
+  s.platform     = :ios, '8.0'
   s.requires_arc = true
-
   s.source_files = 'Pod/Classes'
-  s.resource_bundles = {
-    'YJRFileUtils' => ['Pod/Assets/*.png']
-  }
-
-  s.libraries = 'commonCrypto'
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libcommonCrypto' }
 end
